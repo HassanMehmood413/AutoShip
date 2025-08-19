@@ -1,0 +1,14 @@
+node_modules
+dist
+yarn.lock
+yarn-error.log
+logs
+coverage
+data
+*.config.js
+public
+build
+webpack.config.js
+scripts/transform.js
+chromium.webpack.js
+constants.js
