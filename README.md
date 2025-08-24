@@ -1,88 +1,52 @@
-# Chrome extension boilerplate(extendable for Edge/Opera/Firefox/Brave).
+# AutoShip — 1-Click Amazon → eBay Listing Assistant
+**(Chrome / Edge / Firefox / Opera / Brave • Manifest V3 • React + MUI • Webpack)**
+
+> Import **any number of products** from **Amazon** and list them on **eBay**—with titles, descriptions, images, and prices—**instantly**.  
+> AutoShip uses an LLM (e.g., **GPT-5 via API**) to understand products, generate compliant listings, auto-reprice for margins, monitor stock/price, support **bulk uploads**, and help sellers **stay within platform policies**.
+
+---
+
+## Why AutoShip?
+- ⏱️ **Save 10–15 minutes per listing:** No more copy-paste between Amazon and eBay.
+- ✅ **Reduce errors:** Standardized, consistent listing data and formatting.
+- 📈 **Scale with confidence:** Bulk upload hundreds of products with batch rules.
+- 💰 **Protect margins:** Smart repricing accounts for fees and shipping so profits stay intact.
+- 🔄 **Stay updated:** Live monitoring of Amazon price/stock to adjust your eBay listing.
+
+---
+
+## Features
+- **Cross-browser, MV3 extension** (Chrome, Edge, Firefox, Opera, Brave).
+- **React 18 + Material UI** popup & options pages; **Webpack** bundling.
+- **Content-script helpers** to scrape, parse, and validate product data.
+- **Background service** for long-running tasks and message routing.
+- **LLM-assisted listing generation** (titles, bullets, descriptions, attributes).
+- **Smart Repricing** with target margin + automatic fee/shipping considerations.
+- **Real-time sync** for Amazon stock/price → optional price updates on eBay.
+- **Bulk uploads** with batch rules for titles, categories, and pricing.
+- **Policy-aware prompts** to help stay within eBay/Amazon guidelines.
+- **Built-in services**: `DbService`, `messagePassing`, `chromeService`, plus React helpers (e.g., `FrameMUI` to mount MUI in iframes).
+- **Developer-friendly structure** and scripts to build for multiple browsers.
+
+---
+
 
 ## Prerequisites
+- **Node**: `v16.1.0` (as used in this boilerplate; newer Node may work but is not guaranteed)
+- **Yarn**: `1.22.10`
 
-- yarn 1.22.10
-- node v16.1.0
+> 💡 If you use newer Node/Yarn, pin dependencies or update configs as needed.
 
-### Build
+---
 
-#### For Local Development
+## Install & Build
 
-#### For Chromium Development Build
-
-```
+### Local Development (Chromium)
+```bash
 yarn
 yarn dev:chromium
 ```
+![Built with React](https://img.shields.io/badge/React-18-informational)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-#### For Other Development Build (Edge/Opera/Firefox/Brave))
 
-- create a new file with name firefox.webpack.js and copy paste same chromium.webpack.js, then change browser property to "firefox" or your other browser, booooom it will work like charm.
-- finally add a new script in packages.json file as below.
-
-```
-yarn
-yarn dev:firefox
-```
-
-#### For Production Release
-
-```
-use same script from packages.json file except use build script e.g, build:chromium
-```
-
-## features:
-
-> 1. Support for all browsers extentions.
-> 2. Popup page with reactjs and material ui framework.
-> 3. Content script helpers.
-> 5. Bundling (webpack).
-> 6. Some (useful) services e.g. DbService, messagePassing, chromeService and helper functions(helpers).
-> 7. Some (useful) react components e.g. FrameMUI.js (To mount react mui component in iframe in content script).
-> 8. Some (useful) react helper demonstrations e.g. added demonstration herlpers in popup js to intract with background and content scripts.
-> 9. Comes with React 18(alpha release). you can downgrade it to 17.* but not lower than that. 
-
-## directory structure
-
-> - `src/` is root directory for a chrome extension. it includes `manifest.json` file and other static stuff.
-
-> - `src/background.js` is main background js file for the chrome extension.
-
-> - `src/components` is the directory which includes react js components.
-
-> - `src/pages/popup-page` is the directory which includes react js setup for popup page.
-
-> - `src/pages/option-page` is the directory which includes react js setup for option pages.
-
-> - `src/content-scripts` is the directory which includes react js setup for content script.
-
-> - `src/services` is the directory for services that can be written in es6,es7 or es8...
-
-> - `src/services/helpers/..` is the directory for helpers of content script and background
-
-## How to extend ?
-
-> - Write extension's background scripts code in `src/background.js`
-
-> - Write extension's react components in `src/components/` directory.
-
-> - Write extension's popup page codes in `src/pages/popup-page/` directory.
-
-> - Write extension's option page codes in `src/pages/option-page` directory.
-
-> - Write extension's content scripts codes in `src/pages/content-scripts` directory.
-
-> - Write extension's services codes in `src/services` directory.
-
-> - Write extension's content script and background herlps codes in `src/services/helpers/..` directory.
-
-## Product Hunter Remaining Points
-
-> - Product Hunter:
-> - Search Keywords
-> - Open keyword Tool
-> - Required keywords in title
-> - Maximum Similar niche items
-> - Quick Filter
-> - Advance filter
