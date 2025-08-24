@@ -1,52 +1,113 @@
-# AutoShip — 1-Click Amazon → eBay Listing Assistant
-**(Chrome / Edge / Firefox / Opera / Brave • Manifest V3 • React + MUI • Webpack)**
+# ✨ AutoShip - Intelligent Amazon → eBay Automation Platform
 
-> Import **any number of products** from **Amazon** and list them on **eBay**—with titles, descriptions, images, and prices—**instantly**.  
-> AutoShip uses an LLM (e.g., **GPT-5 via API**) to understand products, generate compliant listings, auto-reprice for margins, monitor stock/price, support **bulk uploads**, and help sellers **stay within platform policies**.
+<div align="center">
+  <img src="https://img.shields.io/badge/GPT--5-Powered-blueviolet?style=for-the-badge" alt="GPT-5 Powered">
+  <img src="https://img.shields.io/badge/Hackathon-2025-success?style=for-the-badge" alt="Hackathon 2025">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge" alt="Version">
+</div>
 
----
+<div align="center">
+  <h3>🚀 One-Click Amazon to eBay Product Automation</h3>
+  <p><strong>Save 10–15 minutes per listing, eliminate errors, and scale profitably</strong></p>
+</div>
 
-## Why AutoShip?
-- ⏱️ **Save 10–15 minutes per listing:** No more copy-paste between Amazon and eBay.
-- ✅ **Reduce errors:** Standardized, consistent listing data and formatting.
-- 📈 **Scale with confidence:** Bulk upload hundreds of products with batch rules.
-- 💰 **Protect margins:** Smart repricing accounts for fees and shipping so profits stay intact.
-- 🔄 **Stay updated:** Live monitoring of Amazon price/stock to adjust your eBay listing.
-
----
-
-## Features
-- **Cross-browser, MV3 extension** (Chrome, Edge, Firefox, Opera, Brave).
-- **React 18 + Material UI** popup & options pages; **Webpack** bundling.
-- **Content-script helpers** to scrape, parse, and validate product data.
-- **Background service** for long-running tasks and message routing.
-- **LLM-assisted listing generation** (titles, bullets, descriptions, attributes).
-- **Smart Repricing** with target margin + automatic fee/shipping considerations.
-- **Real-time sync** for Amazon stock/price → optional price updates on eBay.
-- **Bulk uploads** with batch rules for titles, categories, and pricing.
-- **Policy-aware prompts** to help stay within eBay/Amazon guidelines.
-- **Built-in services**: `DbService`, `messagePassing`, `chromeService`, plus React helpers (e.g., `FrameMUI` to mount MUI in iframes).
-- **Developer-friendly structure** and scripts to build for multiple browsers.
+<div align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#api-docs">API Docs</a> •
+  <a href="#deployment">Deployment</a>
+</div>
 
 ---
 
+## 🎯 **Overview**
 
-## Prerequisites
-- **Node**: `v16.1.0` (as used in this boilerplate; newer Node may work but is not guaranteed)
-- **Yarn**: `1.22.10`
+**AutoShip** empowers sellers to seamlessly import products from **Amazon** and list them to **eBay** in a single click — complete with title, description, images, and price. Powered by **GPT-5 intelligence**, AutoShip automates product understanding, listing creation, stock synchronization, and repricing to maximize profits while keeping sellers compliant with marketplace policies.
 
-> 💡 If you use newer Node/Yarn, pin dependencies or update configs as needed.
+Built for the **GPT-5 Hackathon 2025**, AutoShip helps sellers grow from a handful of listings to a full-time professional operation.
+
+### **🏆 Hackathon Submission**
+- **Event:** GPT-5 Hackathon 2025  
+- **Category:** AI-Powered E-Commerce Tools 
+---
+
+## ✨ **Key Features**
+
+### ⚡ **One-Click Amazon → eBay Listing**
+- Import **any number of products** instantly  
+- Auto-generate **titles, descriptions, images, and pricing**  
+- Save **10–15 minutes per listing**  
+- Eliminate copy-paste errors and formatting issues  
+
+### 🤖 **GPT-5 Product Intelligence**
+- Understand products beyond raw data  
+- Generate compelling SEO-optimized listings  
+- Customize tone/branding for store consistency  
+- Automated category + keyword selection  
+
+### 💰 **Smart Repricing Engine**
+- Set target **profit margins** (e.g., $10 → $15)  
+- Auto-account for **eBay fees + shipping**  
+- Real-time **Amazon price monitoring**  
+- Prevent margin leaks with instant updates  
+
+### 📦 **Stock & Order Sync**
+- Real-time **Amazon stock monitoring**  
+- Prevent out-of-stock cancellations  
+- Auto-route orders to suppliers  
+- Tracking synced back to eBay buyers  
+
+### 📊 **Bulk Uploads & Scaling**
+- Import **hundreds of products in minutes**  
+- Batch edit titles, categories, pricing rules  
+- Standardize professional store catalogs  
+- Scale from side-hustle to full-time  
+
+### ✍️ **Custom Descriptions**
+- Edit product copy for SEO + conversions  
+- Maintain consistent **brand voice**  
+- AutoShip publishes automatically during listing  
+
+### 🛡️ **Compliance & Safety**
+- Stay compliant with **Amazon & eBay policies**  
+- Reduce disputes, cancellations, and errors  
+- Improve seller performance metrics  
 
 ---
 
-## Install & Build
+## 🛠️ **Tech Stack**
 
-### Local Development (Chromium)
+### **Frontend**
+- Browser Extension (Chrome/Edge/Firefox/Brave)  
+- React.js + Material UI for UI  
+- Content scripts for DOM scraping  
+
+### **Backend**
+- **Runtime:** Node.js v18+  
+- **Framework:** Express.js  
+- **Database:** MongoDB / PostgreSQL  
+- **Authentication:** JWT + bcrypt  
+- **API:** RESTful architecture  
+
+### **AI Integration**
+- **OpenAI GPT-5** – product understanding, description generation  
+- **GPT-4-mini** – lightweight optimizations  
+- AI-driven repricing & compliance checks  
+
+---
+
+## 📦 **Installation**
+
+### **Prerequisites**
+- Node.js v18+  
+- MongoDB/PostgreSQL database  
+- OpenAI API key  
+- Git installed  
+
+### **Step 1: Clone the Repository**
 ```bash
-yarn
-yarn dev:chromium
+git clone https://github.com/yourusername/autoship.git
+cd autoship
 ```
-![Built with React](https://img.shields.io/badge/React-18-informational)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-
 
