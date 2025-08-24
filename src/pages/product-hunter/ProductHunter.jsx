@@ -1877,7 +1877,7 @@ const ProductHunter = () => {
             <div className='flex flex-col lg:flex-row'>
               <div className='lg:flex-1'>
                 <p className='text-neutral-500'>
-                  For either Custom Amazon Search URL or eComMiracle Searcher
+                  For either Custom Amazon Search URL or AutoShip Searcher
                 </p>
                 <Checkbox
                   onChange={(e) =>
@@ -2033,7 +2033,7 @@ const ProductHunter = () => {
             </div>
             <span className='py-2 lg:py-0 text-center w-full lg:w-auto lg:flex lg:px-2 relative lg:top-20'>OR</span>
             <div className='my-4 p-4 border lg:flex-1 lg:h-full border-neutral-300 rounded-lg'>
-              <h2 className='font-bold'>eComMiracle Searcher</h2>
+              <h2 className='font-bold'>AutoShip Searcher</h2>
               <p className='text-neutral-500'>
                 If you would rather use our own tool, then enter your desired
                 settings below
@@ -2125,7 +2125,7 @@ const ProductHunter = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
-                      console.log('🚀 UI: eComMiracle Searcher Run button clicked');
+                      console.log('🚀 UI:  Searcher Run button clicked');
                       handleAmazonTab();
                     }}
                     loading={isSearching}

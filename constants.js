@@ -1,7 +1,7 @@
 const { generateGuid } = require("./src/services/utils");
 const constants = {
   appConfig: {
-    appName: "eComMiracle",
+    appName: "AutoShip",
     urls: {
       chrome: "CHROME_STORE_URL",
     },

@@ -7,7 +7,7 @@ The extension is getting permission errors for eBay URLs because it needs to be 
 
 ### Step 1: Reload the Extension
 1. Open Chrome and go to `chrome://extensions/`
-2. Find the "eComMiracle" extension
+2. Find the "AutoShip" extension
 3. Click the **refresh/reload button** (🔄) next to the extension
 4. Or toggle the extension **OFF** and then **ON** again
 

@@ -891,7 +891,7 @@ const PopUp = () => {
         <div className='flex justify-between p-2 w-full'>
           {/* Left Side */}
           <div className='flex align-center gap-4'>
-            <img src={EcomMiracleBlack} alt='Ecommiracle' className='w-32' />
+            {/* <img src={EcomMiracleBlack} alt='Ecommiracle' className='w-32' /> */}
             <span className='relative  text-sm'>
               Logged in {email}
               <button onClick={handleLogoutUser} className='pl-2 underline text-[#ff9900] hover:font-semibold cursor-pointer'>
@@ -947,7 +947,7 @@ const PopUp = () => {
           {tabIndex !== 5 && (
             <div className="flex items-center justify-center h-32 text-gray-500">
               <div className="text-center">
-                <h3 className="text-lg font-medium mb-2">Welcome to eComMiracle</h3>
+                <h3 className="text-lg font-medium mb-2">Welcome to AutoShip</h3>
                 <p className="text-sm">Click on any tab above to open the full page</p>
               </div>
             </div>

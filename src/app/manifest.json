@@ -1,6 +1,6 @@
 {
-  "name": "eComMiracle",
-  "description": "eComMiracle",
+  "name": "AutoShip",
+  "description": "AutoShip",
   "version": "0.3.6",
   "manifest_version": 3,
   "permissions": [
@@ -16,7 +16,7 @@
   },
   "options_page": "option.html",
   "action": {
-    "default_title": "eComMiracle",
+    "default_title": "AutoShip",
     "default_icon": "images/patiom-new-logo.png",
     "default_popup": "popup.html"
   },
